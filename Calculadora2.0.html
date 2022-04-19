@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+//Calculadora 2.0
+let nume= 2;
+let nume2= 2;
+let signo=0;
+ //elige una opcion
+`0=suma
+1=resta
+2=multiplicacion
+3=division
+4=potencia
+5=Continuar
+6=salir`
+switch(signo){
+case 0:suma1=(nume+nume2);
+  console.log("El resultado de la suma es " + suma1);
+  opcion = confirm("Quiere hacer otra operacion? true/false");
+  if(opcion === true){ 
+  console.log("Vuelve a elegir");} 
+  break
+case 1: resta1=(nume-nume2)
+  console.log("El resultado de la resta es " + resta1);
+  opcion = confirm("Quiere hacer otra operacion? true/false");
+  if(opcion===true){
+    console.log("Vuelve a elegir");
+  } else {break}
+   break;
+case 2: multiplicacion1=(nume*nume2);
+   console.log("El resultado de la multiplicacion es " + multiplicacion1);
+   opcion = opcion = confirm("Quiere hacer otra operacion? true/false");
+  if(opcion===true){
+    console.log("Vuelve a elegir");
+  } else {break}
+   break;
+case 3: division1=(nume/nume2);
+ console.log("El resultado de la division es "+ division1);
+ opcion = confirm("Quiere hacer otra operacion? true/false");
+  if(opcion===true){
+    console.log("Vuelve a elegir");
+  } else {break}
+  break;
+case 4: //acepta solo un numero 
+    potencia1=(nume*nume)
+    console.log("la potencia de "+ nume +" es " + potencia1);
+    opcion = confirm("Quiere hacer otra operacion? true/false");
+  if(opcion===true){
+    console.log("Vuelve a elegir");
+  } else {break}
+    break;
+}
+/*if(signo===0){
+    suma1=(nume+nume2);
+    console.log("El resultado de la suma es " + suma1);
+ } else if(signo===1){
+  resta1=(nume-nume2)
+  console.log("El resultado de la resta es " + resta1);
+ } else if(signo===2){
+   multiplicacion1=(nume*nume2);
+   console.log("El resultado de la multiplicacion es " + multiplicacion1);
+ }else if(signo===3){division1=(nume/nume2);
+ console.log("El resultado de la division es "+ division1);
+ }else if(signo===4){
+    //acepta solo un numero 
+    potencia1=(nume*nume)
+    console.log("la potencia de "+ nume +" es " + potencia1);
+ }else if(signo===5){console.log("Dame otra operacion");
+ }else if(signo==6) return*/
+ 
+ </script>  
+</body>
+</html>

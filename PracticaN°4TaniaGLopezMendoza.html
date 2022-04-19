@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Ejercicios</h1>
+<script>
+/*1) Programa una funcion que cuente el numeron de caracteres de una cadena de texto, pe. miFuncion("Hola Mundo") devolvera 10.*/
+CadenadeTexto("Hola Mundo");
+CadenadeTexto("")
+function CadenadeTexto(cadena =""){
+    if(!cadena){
+    console.log("No hay ninguna cadena");
+    } else{
+    console.info(`La cadena "${cadena}" tiene ${cadena.length} caracteres`);
+    }
+}
+/*2) Programa una funcion que te devuelva el texto recortadosegun el numero de caracteres indicados,pe. miFuncion("Hola Mundo",4)devolverá "Hola".*/
+console.log("Ejercicio 2");
+TextoRecortado("Hola Mundo",7);
+TextoRecortado("");
+function  TextoRecortado(cadena="",longitud=undefined){
+    if(!cadena){
+    console.log("No hay ninguna cadena");
+    } else {
+    console.info(cadena.slice(0,longitud));
+    }
+}
+/*3)Programa una funciónquedada una string te devuelva un Array de textos separados por cierto caracter, pe.miFuncion('hola que tal','') devolvera ['hola', 'que', 'tal',].*/
+console.log("Ejercicio 3");
+Separar("Hola que tal"," "); 
+function Separar(cadena = "",separador=undefined){
+ if(cadena && separador){
+ console.info(cadena.split(separador))
+ }else if(!cadena && separador){
+     console.log("Falta cadena");
+ }else if(!cadena && !separador){
+    console.log("Falta cadena y separador");
+ }else {(cadena && !separador)
+    console.log("Falta separador");
+}
+    /*if(!cadena) {console.log("no hay cadena de texto");
+} else if(!cadena && separador=== undefined); {return console.log("No hay cadena ni separador");
+} else if {return (console.info(cadena.split(separador)));}*/
+
+/*4)Programa una función que repita un texto X veces pe. miFunción('Hola mundo',3) devolvera Hola mundo Hola mundo Hola mundo*/
+console.log("Ejercicio 4");
+repetir("Hola Mundo",7);
+repetir("Hola Mundo");
+repetir("Hola Mundo",-1);
+repetir("Hola Mundo",0);
+function repetir(texto="", rep = undefined) 
+{
+    if(!texto){console.log("No hay texto");
+    } else if(rep === undefined){console.log("No hay numero de veces para repetir");
+    } else if(rep ===0){console.log("No puedes poner numero el numero 0 para repetir");
+    } else if( Math.sign(rep === -1)){console.log("No puedes poner un numero negativo para repetir");
+    }
+    for(let i=1;i<=rep;i++){
+    console.info(`${texto}, ${i}`);}
+}}
+</script>
+</body>
+</html>
